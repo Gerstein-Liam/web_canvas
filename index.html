@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Author:Gerstein Liam Version 0.99 
+  Documentation:https://www.tutorialspoint.com/angularjs/angularjs_controllers.htm
+  Outils
+  -->
+<html>
+<head>
+    <title>Ethos-animation </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Ethos-animation">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Angular 1.6.7 Local -->
+    <script src="library/angular-1.6.7/angular.js"></script>
+    <script src="library/angular-1.6.7/angular.min.js"></script>
+    <script src="library/angular-1.6.7/angular-animate.js"></script>
+    <script src="library/angular-1.6.7/angular-animate.min.js"></script>
+    <script src="library/angular-1.6.7/angular-aria.js"></script>
+    <script src="library/angular-1.6.7/angular-aria.min.js"></script>
+    <script src="library/angular-1.6.7/angular-cookies.js"></script>
+    <script src="library/angular-1.6.7/angular-cookies.min.js"></script>
+    <script src="library/angular-1.6.7/angular-loader.js"></script>
+    <script src="library/angular-1.6.7/angular-loader.min.js"></script>
+    <script src="library/angular-1.6.7/angular-message-format.js"></script>
+    <script src="library/angular-1.6.7/angular-message-format.min.js"></script>
+    <script src="library/angular-1.6.7/angular-messages.js"></script>
+    <script src="library/angular-1.6.7/angular-messages.min.js"></script>
+    <script src="library/angular-1.6.7/angular-mocks.js"></script>
+    <script src="library/angular-1.6.7/angular-parse-ext.js"></script>
+    <script src="library/angular-1.6.7/angular-parse-ext.min.js"></script>
+    <script src="library/angular-1.6.7/angular-route.js"></script>
+    <script src="library/angular-1.6.7/angular-route.min.js"></script>
+    <script src="library/angular-1.6.7/angular-sanitize.js"></script>
+    <script src="library/angular-1.6.7/angular-sanitize.min.js"></script>
+    <script src="library/angular-1.6.7/angular-scenario.js"></script>
+    <script src="library/angular-1.6.7/angular-touch.js"></script>
+    <script src="library/angular-1.6.7/angular-touch.min.js"></script>
+    <!-- Bootstrap Local -->
+    <script src="library/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="library/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+    <script src="library/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="library/bootstrap-4.0.0-dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="library/bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="library/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="library/bootstrap-4.0.0-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="library/bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="library/bootstrap-4.0.0-dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="library/bootstrap-4.0.0-dist/css/bootstrap-reboot.min.css">
+    <!-- Feuille de style -->
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/mainapp_controller.js"></script>
+</head>
+<body>
+    <body ng-app="mainApp">
+        <div ng-include='"templates/header.html"'></div>
+        <div class="row">
+            <div class="col-lg-2 col-md-2">
+				<div ng-include='"templates/nav.html"'></div>
+			</div>
+			<div class="col-lg-10 col-md-10">
+                <div ng-view></div>
+            </div>
+        </div>
+        <div ng-include='"templates/footer.html"'></div>
+    </body>
+</html>
